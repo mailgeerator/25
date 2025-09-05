@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free temporary email generator. Create disposable email addresses instantly to protect your privacy and avoid spam.">
+    <meta name="keywords" content="temp mail, temporary email, disposable email, fake email, email generator">
+    <title>TempMail Generator - Free Disposable Email Addresses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-envelope"></i>
+                <h1>TempMail Generator</h1>
+            </div>
+            <p class="tagline">Create disposable email addresses instantly - No registration required!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="card email-generator">
+                    <h2 class="card-title">Your Temporary Email Address</h2>
+                    <div class="email-display" id="emailDisplay">loading...</div>
+                    <div class="btn-group">
+                        <button class="btn btn-copy" id="copyBtn"><i class="fas fa-copy"></i> Copy Email</button>
+                        <button class="btn btn-refresh" id="refreshBtn"><i class="fas fa-sync-alt"></i> Generate New</button>
+                    </div>
+
+                    <div class="domain-selector">
+                        <h3>Select Email Domain</h3>
+                        <div class="domain-options">
+                            <button class="domain-btn active" data-domain="@tempmailo.com">@tempmailo.com</button>
+                            <button class="domain-btn" data-domain="@disposable.com">@disposable.com</button>
+                            <button class="domain-btn" data-domain="@throwaway.com">@throwaway.com</button>
+                            <button class="domain-btn" data-domain="@quickmail.com">@quickmail.com</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card inbox">
+                    <div class="inbox-header">
+                        <h2 class="card-title">Inbox</h2>
+                        <button class="btn" id="refreshInboxBtn"><i class="fas fa-redo"></i> Refresh</button>
+                    </div>
+                    <div class="inbox-content">
+                        <ul class="email-list" id="emailList">
+                            <li class="email-item">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <div class="email-info">
+                                    <div class="email-sender">Welcome Team</div>
+                                    <div class="email-subject">Welcome to TempMail Generator!</div>
+                                </div>
+                                <div class="email-time">Just now</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ad-container">
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        <p>Google AdSense Ad Unit</p>
+                        <p>Ad Unit ID: <code>INSERT_AD_UNIT_ID</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="ad-container">
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        <p>Google AdSense Vertical Banner</p>
+                        <p>Ad Unit ID: <code>INSERT_AD_UNIT_ID</code></p>
+                    </div>
+                </div>
+
+                <div class="ad-container">
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder">
+                        <p>Google AdSense Square Ad</p>
+                        <p>Ad Unit ID: <code>INSERT_AD_UNIT_ID</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Protect Your Privacy</h3>
+                <p>Keep your personal email safe from spam and phishing attempts</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Instant Setup</h3>
+                <p>No registration or personal information required</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>Time-Saving</h3>
+                <p>Quick disposable emails for verification and sign-ups</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 TempMail Generator. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="ads.js"></script>
+</body>
+</html>
